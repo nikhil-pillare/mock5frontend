@@ -35,14 +35,14 @@ export const Dashboard = () => {
 
 
    <Nav/>
-<Box display = "grid" gridTemplateColumns="repeat(3,1fr)" gap = "10px" >{
+<Box display = "grid" gridTemplateColumns="repeat(2,1fr)" gap = "10px" >{
 
 data && data.map((item) => (
 <Card maxW='sm'>
   <CardBody>
     <Image
-      src={item.imageURL}
-      alt='Doc Image'
+      src={item.image}
+      alt='Image'
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3' textAlign = "left" >
